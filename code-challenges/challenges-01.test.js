@@ -30,8 +30,6 @@ const addExclamation = (arr) => {
     stringArray.push(value + '!');
   });
   return stringArray;
-  //Write a function that takes in an array of strings
-  //Return new array of same strings + !
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -43,7 +41,11 @@ Use `forEach` to loop over the input array. The modified strings should each be 
 ------------------------------------------------------------------------------------------------ */
 
 const allUpperCase = (arr) => {
-  // Solution code here...
+  const upperArray = [];
+  arr.forEach(function (value) {
+    upperArray.push(value.toUpperCase());
+  });
+  return upperArray;
 };
 
 /* ------------------------------------------------------------------------------------------------
