@@ -59,11 +59,16 @@ Use `forEach` to build a new array of strings, each string modified by the callb
 ------------------------------------------------------------------------------------------------ */
 
 const greeting = (word) => {
-  // Solution code here...
+  const upperWord = word.toUpperCase() + '!';
+  return upperWord;
 };
 
-const speaker = (words, callback) => {
-  // Solution code here...
+const speaker = (words) => {
+  const response = [];
+  words.forEach(function (words){
+    response.push(words);
+  });
+  return response;
 };
 
 /* ------------------------------------------------------------------------------------------------
