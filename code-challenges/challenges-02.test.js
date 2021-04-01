@@ -9,7 +9,8 @@ Write a function named raisedToTheThird that takes in an array of numbers and re
 ------------------------------------------------------------------------------------------------ */
 
 const raisedToTheThird = (arr) => {
-  // Solution code here...
+  let thirdPower = [];
+  arr.forEach(Math.pow(arr.value, 3));
 };
 
 /* ------------------------------------------------------------------------------------------------
