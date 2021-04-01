@@ -69,7 +69,11 @@ Write a function named forEachTwoToThe that produces the same output as your for
 ------------------------------------------------------------------------------------------------ */
 
 const forEachTwoToThe = (arr) => {
-  // Solution code here...
+  const forEachArr = [];
+  arr.forEach(function (value) {
+    forEachArr.push(Math.pow(2, value));
+  });
+  return forEachArr;
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -79,7 +83,11 @@ Write a function named mapTwoToThe that produces the same output as your forLoop
 ------------------------------------------------------------------------------------------------ */
 
 const mapTwoToThe = (arr) => {
-  // Solution code here...
+  const mapArr = [];
+  arr.map(function (value) {
+    mapArr.push(Math.pow (2, value));
+  });
+  return mapArr;
 };
 
 /* ------------------------------------------------------------------------------------------------
