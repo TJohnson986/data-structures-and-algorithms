@@ -23,7 +23,13 @@ For example, typeNum([1, 'bob' ,3]) returns [1,3].
 ------------------------------------------------------------------------------------------------ */
 
 const typeNum = (arr) => {
-  // Solution code here...
+  let numbers = (value) => {
+    if (typeof(value) === 'number') {
+      return value;
+    }
+  };
+  let numbersArr = arr.filter(numbers);
+  return numbersArr;
 };
 
 /* ------------------------------------------------------------------------------------------------
