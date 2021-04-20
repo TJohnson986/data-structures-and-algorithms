@@ -63,10 +63,8 @@ Write a function named containsW that takes in a string. This function should us
 
 ------------------------------------------------------------------------------------------------ */
 
-const containsW = (str) => {
-  let regex =  /w/;
-  return regex.test(str);
-};
+const containsW = (str) => /w/.test(str);
+
 
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 3
@@ -80,10 +78,7 @@ For example:
 'hello world' returns false
 ------------------------------------------------------------------------------------------------ */
 
-const isNum = (input) => {
-  let regex = /[0-9]/;
-  return regex.test(input);
-};
+const isNum = (input) => /[0-9]/.test(input);
 
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 4
@@ -92,10 +87,8 @@ Write a function named containsWorld that takes in a string or number of any len
 
 ------------------------------------------------------------------------------------------------ */
 
-const containsWorld = (input) => {
-  let regex = /(world)/;
-  return regex.test(input);
-};
+const containsWorld = (input) => /(world)/.test(input);
+
 
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 5
@@ -105,11 +98,8 @@ Write a function named isCapitalized that takes in a string. This function shoul
 Return an array containing all the matches.
 ------------------------------------------------------------------------------------------------ */
 
-const isCapitalized = (str) => {
-  let regex = /\b[A-Z][a-zA-Z]*\b/g;
-  let matches = str.match(regex);
-  return matches || [];
-};
+const isCapitalized = (str) => str.match(/\b[A-Z][a-zA-Z]*\b/g) || [];
+
 
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 6
@@ -117,9 +107,7 @@ CHALLENGE 6
 Write a function named citiesAtoJ that takes in an array of city names and uses a regular expression pattern to return a new array containing any cities that begin with the letters A through J, inclusive.
 ------------------------------------------------------------------------------------------------ */
 
-const citiesAtoJ = (arr) => {
-  return arr.filter(i => (/^[A-J]/).test(i));
-};
+const citiesAtoJ = (arr) => arr.filter(i => (/^[A-J]/).test(i));
 
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 7 - Stretch Goal
