@@ -7,8 +7,9 @@ Write a function named returnTen, takes in a string and uses split and splice to
 
 ------------------------------------------------------------------------------------------------ */
 
-function returnTen(str){
-  // Solution code here...
+function returnTen(str) {
+  let arr = str.split('').splice(-10);
+  return arr;
 }
 
 /* ------------------------------------------------------------------------------------------------
