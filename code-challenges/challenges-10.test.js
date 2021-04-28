@@ -27,14 +27,8 @@ For example:
 return: 23
 ------------------------------------------------------------------------------------------------ */
 const findMax = (matrix) => {
-  let highestNumber = 0;
-  for(let i = 0; i <= matrix.length -1; i++){
-    for(let j = 0; j <= matrix[i].length - 1; j++){
-      if (matrix[i][j] > highestNumber[i]){
-        highestNumber[i] = matrix[i][j];
-      }
-    }
-  }
+  let max = matrix.map(x => Math.max(...x));
+  return max[0];
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -52,13 +46,13 @@ For example:
 return: 35
 ------------------------------------------------------------------------------------------------ */
 const totalSum = (matrix) => {
-  let rowSum = new Array(matrix.length).fill(0);
-  let columnSum = new Array(matrix.length).fill(0);
-  for(let i = 0; i <= matrix.length; i++){
-    for(let j = 0; j <= matrix[i].length; j++){
+  // let rowSum = new Array(matrix.length).fill(0);
+  // let columnSum = new Array(matrix.length).fill(0);
+  for (let i = 0; i <= matrix.length; i++) {
+    for (let j = 0; j <= matrix[i].length; j++) {
       let value = matrix[i][j];
-      rowSum[i] += value;
-      columnSum[j] += value;
+      // rowSum[i] += value;
+      // columnSum[j] += value;
       return value;
     }
   }
@@ -88,8 +82,15 @@ const alkiBeach = [33, 31, 147, 130, 27, 93, 38, 126, 141, 63, 46, 17];
 const cookieStores = [firstPike, seaTac, seattleCenter, capHill, alkiBeach];
 
 const grandTotal = (stores) => {
-  // Solution code here...
-
+  let ans = [];
+  for (let j = 0; j < stores[0].length; j++) {
+    let total = 0;
+    for (let i = 0; i < stores.length; i++) {
+      total += stores[i][j];
+    }
+    ans.push(total);
+  }
+  return ans;
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -103,7 +104,9 @@ Write a function named salesData that uses forEach to iterate over the hourlySal
 ------------------------------------------------------------------------------------------------ */
 
 const salesData = (hours, data) => {
-  // Solution code here...
+  let ans = [];
+  hours.forEach((hour, index) => ans.push({ sales: `${data[index]} cookies`, time: hour }));
+  return ans;
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -128,7 +131,7 @@ const errands = [
 ];
 
 const howManyTreats = (arr) => {
-  // Solution code here...
+  return arr[2].items[1].quantity;
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -235,20 +238,20 @@ Run your tests from the console: jest challenge-12.test.js
 
 describe('Testing challenge 1', () => {
   test('it should return the last 10 characters of a string as an array', () => {
-    expect(returnTen('hello world')).toStrictEqual(['e','l','l','o',' ','w','o','r','l','d']);
-    expect(returnTen('world')).toStrictEqual(['w','o','r','l','d']);
+    expect(returnTen('hello world')).toStrictEqual(['e', 'l', 'l', 'o', ' ', 'w', 'o', 'r', 'l', 'd']);
+    expect(returnTen('world')).toStrictEqual(['w', 'o', 'r', 'l', 'd']);
   });
 });
 
 describe('Testing challenge 2', () => {
   test('It should return the max value', () => {
-    expect(findMax([[13,24,24,2], [2,5,6], [2,3]])).toStrictEqual(24);
+    expect(findMax([[13, 24, 24, 2], [2, 5, 6], [2, 3]])).toStrictEqual(24);
   });
 });
 
 describe('Testing challenge 3', () => {
   test('It should return the total sum', () => {
-    expect(totalSum([[13,24,24,2], [2,5,6], [2,3]])).toStrictEqual(81);
+    expect(totalSum([[13, 24, 24, 2], [2, 5, 6], [2, 3]])).toStrictEqual(81);
     expect(totalSum([])).toStrictEqual(0);
   });
 });
