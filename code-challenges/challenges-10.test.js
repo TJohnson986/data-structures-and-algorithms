@@ -27,7 +27,9 @@ For example:
 return: 23
 ------------------------------------------------------------------------------------------------ */
 const findMax = (matrix) => {
-  let max = matrix.map(x => Math.max(...x));
+  let max = matrix.map(x => {
+    return Math.max(...x);
+  });
   return max[0];
 };
 
@@ -46,16 +48,14 @@ For example:
 return: 35
 ------------------------------------------------------------------------------------------------ */
 const totalSum = (matrix) => {
-  // let rowSum = new Array(matrix.length).fill(0);
-  // let columnSum = new Array(matrix.length).fill(0);
-  for (let i = 0; i <= matrix.length; i++) {
-    for (let j = 0; j <= matrix[i].length; j++) {
-      let value = matrix[i][j];
-      // rowSum[i] += value;
-      // columnSum[j] += value;
-      return value;
+  let value = 0;
+  for (let i = 0; i < matrix.length; i++) {
+    for (let j = 0; j < matrix[i].length; j++) {
+      // value += matrix[i][j];
+      value = value + matrix[i][j];
     }
   }
+  return value;
 };
 
 

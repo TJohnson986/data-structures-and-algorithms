@@ -13,6 +13,7 @@ const maxInArray = (arr) => {
   return arr.reduce((acc,value) =>
     Math.max(acc, value), max);
 };
+
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 2
 
@@ -124,7 +125,9 @@ const characters = [
   },
 ];
 
+
 const getHouses = (arr) => arr.map(character => character.house);
+
 
 /*------------------------------------------------------------------------------------------------
 CHALLENGE 6
