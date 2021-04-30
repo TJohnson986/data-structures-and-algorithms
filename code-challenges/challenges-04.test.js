@@ -21,6 +21,7 @@ function lower(str) {
   return str.toLowerCase();
 }
 
+
 const updateAnimal = (arr, callback) => {
   return arr.map(callback);
 };
