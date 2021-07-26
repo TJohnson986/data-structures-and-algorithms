@@ -13,4 +13,5 @@ Each day, you'll add one new file to this folder to do your work for the day's a
 ### 401 Data Structures, Code Challenges
 
 #### Table of Contents
+1. [Code Challenge 10 - Stack and Queue](./javascript/stack-and-queue/README.md)
 1. [Code Challenge 15 - Trees](./javascript/trees/README.md)
