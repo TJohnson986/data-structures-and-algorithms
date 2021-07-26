@@ -35,6 +35,36 @@ class Stack {
 }
 
 
+class Queue {
+  constructor() {
+    this.front = null;
+    this.next = null;
+  }
+
+  enqueue(value) {
+    let newNode = new Node(value);
+    if(!this.rear) {
+      this.rear = newNode;
+      this.front = newNode;
+    } else {
+      this.rear.next = newNode;
+      this.rear = newNode;
+    }
+  }
+
+  dequeue() {
+    let temp = this.front;
+    this.front = temp.next;
+    temp.next = null;
+
+    return temp.value;
+  }
+
+}
+
+
+
+// Stack //
 let stack = new Stack();
 
 stack.push(5);
@@ -52,3 +82,18 @@ console.log('this is peek', peek);
 
 let isEmpty = stack.isEmpty();
 console.log(isEmpty);
+
+
+// Queue //
+
+let queue = new Queue();
+
+queue.enqueue(4);
+queue.enqueue(3);
+queue.enqueue(10);
+
+console.log(queue);
+
+let four = queue.dequeue();
+console.log(four);
+console.log(queue);
