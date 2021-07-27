@@ -43,15 +43,25 @@ describe('testing queue functionality', () => {
   });
 
   test('enqueue multiple values into a queue', () => {
+    queue.enqueue(20);
+    queue.enqueue(30);
+    console.log('queue', queue);
 
+    expect(queue.front.value).toEqual(10);
+    expect(queue.front.next.value).toEqual(20);
+    expect(queue.rear.value).toEqual(30);
   });
 
   test('dequeue out of the queue', () => {
+    queue.dequeue();
+    console.log('queue', queue);
 
+    expect(queue.front.value).toEqual(20);
+    expect(queue.rear.value).toEqual(30);
   });
 
   test('peek into a queue and see expected value', () => {
-
+    
   });
 
   test('can empty a queue after multiple dequeues', () => {
