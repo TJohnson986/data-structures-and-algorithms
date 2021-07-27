@@ -97,3 +97,10 @@ console.log(queue);
 let four = queue.dequeue();
 console.log(four);
 console.log(queue);
+
+module.exports = {
+  Node,
+  Stack,
+  Queue,
+};
+
