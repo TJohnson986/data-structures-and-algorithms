@@ -1,5 +1,5 @@
 // const stack = require('../stack-and-queue.js');
-const { Stack } = require('../stack-and-queue.js');
+const { Stack, Queue } = require('../stack-and-queue.js');
 
 describe('testing stack functionality', () => {
   let stack = new Stack();
@@ -30,12 +30,32 @@ describe('testing stack functionality', () => {
   });
 
 
-  // test('empty stack after multiple pops', () => {
+});
 
-  // });
+describe('testing queue functionality', () => {
+  let queue = new Queue();
 
+  test('enqueue into a queue', () => {
+    queue.enqueue(10);
+    // console.log('queue', queue);
 
-  // test('peek the next item', () => {
+    expect(queue.front.value).toEqual(10);
+  });
 
-  // });
+  test('enqueue multiple values into a queue', () => {
+
+  });
+
+  test('dequeue out of the queue', () => {
+
+  });
+
+  test('peek into a queue and see expected value', () => {
+
+  });
+
+  test('can empty a queue after multiple dequeues', () => {
+
+  });
+
 });
