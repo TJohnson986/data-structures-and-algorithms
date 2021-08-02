@@ -87,3 +87,11 @@ console.log(table);
 
 // use find() method to find a value in the buckets
 console.log(table.find('Tyler')); //LinkedList { head: Node { value: { Tyler: 'student' }, next: null } }
+
+
+module.exports = {
+  HashTable,
+  LinkedList,
+  Node,
+};
+

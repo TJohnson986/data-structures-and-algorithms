@@ -1,8 +1,8 @@
-# Graphs
-First implementation of a graph, including add node, add edge, get nodes, and get neighbor methods.
+# Hash Table
+First implementation of a Hash Table, including add, add get, contains, and hash methods.
 
 ## Challenge
-Implementing a Graph represented as an adjacency list.
+Implementing a Hash Table with the above methods, adding a value to the table, get or finding the value in the table, and returning a boolean of whether that value exists.
 
 ## Approach & Efficiency
 <!-- What approach did you take? Why? What is the Big O space/time for this approach? -->
