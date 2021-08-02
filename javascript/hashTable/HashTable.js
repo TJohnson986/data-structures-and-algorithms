@@ -60,9 +60,10 @@ class HashTable {
 
   //get a key, look up the value in the hash table and return
 
-  // find(key) {
-
-  // }
+  find(key) {
+    let hash = this.hash(key);
+    return this.buckets[hash];
+  }
 
   // returns a boolean whether the key exists or not
   contains(key) {
@@ -83,3 +84,6 @@ table.add('Jacob', 'instructor');
 
 console.log(table.contains('jacob'));
 console.log(table);
+
+// use find() method to find a value in the buckets
+console.log(table.find('Tyler')); //LinkedList { head: Node { value: { Tyler: 'student' }, next: null } }
