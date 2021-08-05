@@ -95,3 +95,9 @@ graph.addDirectedEdge(c, g);
 
 console.log(graph.adjacencyList);
 console.log('breadth first', graph.breadthFirst(a));
+
+module.exports = {
+  Graph,
+  Vertex,
+  Edge,
+};
