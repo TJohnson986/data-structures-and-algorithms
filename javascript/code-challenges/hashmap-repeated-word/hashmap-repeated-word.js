@@ -27,3 +27,7 @@ function repeatedWord (str) {
 
 
 console.log(repeatedWord(str));
+
+module.exports = {
+  repeatedWord
+};
