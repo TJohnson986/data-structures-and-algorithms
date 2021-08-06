@@ -1,8 +1,8 @@
-# Hashmap - Repeated Word
-Write a function that finds the first word that repeats in a string.
+# Hashmap - Tree Intersection
+Write a function that finds all values found between two binary trees.
 
 ## Challenge
-Write a function called repeated word that finds the first word to occur more than once in a string. The function takes in a string and returns a string.
+Write a function that finds all values found between two binary trees.
 
 ## Approach & Efficiency
 <!-- What approach did you take? Why? What is the Big O space/time for this approach? -->
