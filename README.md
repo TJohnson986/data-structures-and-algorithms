@@ -16,6 +16,10 @@ Each day, you'll add one new file to this folder to do your work for the day's a
 1. [Code Challenge 10 - Stack and Queue](./javascript/stack-and-queue/README.md)
 1. [Code Challenge 15 - Trees](./javascript/trees/README.md)
 1. [Code Challenge 17 - Trees - Breadth Frist](./javascript/trees-breadth-first/README.md)
+1. [Code Challenge 26 - Insertion Sort](./javascript/insertion-sort/README.md)
 1. [Code Challenge 30 - Hash Table](./javascript/hashtable/README.md)
-
+1. [Code Challenge 31 - Hashmap-Repeated-Word](./javascript/code-challenges/hashmap-repeated-word/README.md)
+1. [Code Challenge 32 - Hashmap-Tree-Intersection](./javascript/code-challenges/hashmap-tree-intersection/README.md)
+1. [Code Challenge 35 - Graph Implementation](./javascript/graph/README.md)
+1. [Code Challenge 36 - Graph-Breadth-First](./javascript/graph/README.md)
 
