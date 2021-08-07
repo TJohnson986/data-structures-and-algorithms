@@ -94,4 +94,4 @@ graph.addDirectedEdge(e, h);
 graph.addDirectedEdge(c, g);
 
 console.log(graph.adjacencyList);
-console.log(graph.breadthFirst(a));
+console.log('breadth first', graph.breadthFirst(a));
