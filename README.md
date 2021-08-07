@@ -15,4 +15,7 @@ Each day, you'll add one new file to this folder to do your work for the day's a
 #### Table of Contents
 1. [Code Challenge 10 - Stack and Queue](./javascript/stack-and-queue/README.md)
 1. [Code Challenge 15 - Trees](./javascript/trees/README.md)
+1. [Code Challenge 17 - Trees - Breadth Frist](./javascript/trees-breadth-first/README.md)
 1. [Code Challenge 30 - Hash Table](./javascript/hashtable/README.md)
+
+
