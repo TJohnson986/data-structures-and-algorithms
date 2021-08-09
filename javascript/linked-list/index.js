@@ -56,4 +56,7 @@ list.add(10);
 list.traverse();
 
 
-module.exports = LinkedList;
+module.exports = {
+  LinkedList,
+  Node
+};
