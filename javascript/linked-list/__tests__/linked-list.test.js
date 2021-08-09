@@ -1,10 +1,14 @@
 'use strict';
 
-// Require our linked list implementation
-const LinkedList = require('../index');
+const { LinkedList, Node}  = require('../index.js');
 
-describe('Linked List', () => {
-  it('works', () => {
-    expect(true).toBeTruthy();
+describe('Testing Linked List functionality', () => {
+  const list = new LinkedList();
+
+  test('create a new node', () => {
+    const testNode = new Node(1);
+    list.head = testNode;
+
+    expect(list.head.value).toEqual(1);
   });
 });
