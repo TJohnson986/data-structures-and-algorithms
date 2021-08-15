@@ -51,7 +51,6 @@ class LinkedList {
       }
 
       newNode.next = current;
-      // console.log('current', current);
       previous.next = newNode;
     }
   }
@@ -72,18 +71,33 @@ class LinkedList {
 
   insertAfter(value, newValue) {
     let current = this.head;
-    let previous = null;
     let newNode = new Node(newValue);
 
     while (value !== current.value && current.next !== null) {
       current = current.next;
     }
 
-    // previous.next = current;
     newNode.next = current.next;
     current.next = newNode;
   }
 
+
+
+  kthFromEnd(k) {
+    let current = this.head;
+    let count = 0;
+    while (current !== null) {
+      count++;
+      current = current.next;
+    }
+    let difference = count - k + 1;
+    while (difference !== count) {
+      let current = this.head;
+      current = current.next;
+    }
+    let kValue = current.value;
+    console.log('kValue', kValue);
+  }
 }
 
 const list = new LinkedList();
@@ -109,6 +123,8 @@ list.append(30, 1);
 list.insertBefore(30, 15);
 
 list.insertAfter(15, 16);
+
+list.kthFromEnd(6);
 
 console.log(JSON.stringify(list));
 
