@@ -13,6 +13,10 @@ Each day, you'll add one new file to this folder to do your work for the day's a
 ### 401 Data Structures, Code Challenges
 
 #### Table of Contents
+
+1. [Code Challenge 1 - Array Reverse](./javascript/array-reverse/README.md)
+1. [Code Challenge 2 - Array-Insert-Shift](./javascript/array-insert-shift/README.md)
+1. [Code Challenge 3 - Array-Binary-Search](./javascript/array-binary-search/README.md)
 1. [Code Challenge 10 - Stack and Queue](./javascript/stack-and-queue/README.md)
 1. [Code Challenge 15 - Trees](./javascript/trees/README.md)
 1. [Code Challenge 17 - Trees - Breadth Frist](./javascript/trees-breadth-first/README.md)
@@ -22,4 +26,3 @@ Each day, you'll add one new file to this folder to do your work for the day's a
 1. [Code Challenge 32 - Hashmap-Tree-Intersection](./javascript/code-challenges/hashmap-tree-intersection/README.md)
 1. [Code Challenge 35 - Graph Implementation](./javascript/graph/README.md)
 1. [Code Challenge 36 - Graph-Breadth-First](./javascript/graph/README.md)
-
