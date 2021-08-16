@@ -1,8 +1,8 @@
-# Code Challenge 15 - Stack and Queue
+# Code Challenge 11 - Psuedo Queue
 
 ## Challenge
 
-New implementation of a Node class, a Stack class, and a Queue class to demonstrate the differences. 
+Implement a Queue using two Stacks.
 
 ## Approach & Efficiency
 <!-- What approach did you take? Why? What is the Big O space/time for this approach? -->
