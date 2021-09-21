@@ -9,7 +9,15 @@ Write a function named raisedToTheThird that takes in an array of numbers and re
 ------------------------------------------------------------------------------------------------ */
 
 const raisedToTheThird = (arr) => {
+<<<<<<< HEAD
   // Solution code here...
+=======
+  let thirdPower = [];
+  arr.forEach(function (value) {
+    thirdPower.push(Math.pow(value, 3));
+  });
+  return thirdPower;
+>>>>>>> bd5fd0cc0816b7f3af8a6098a4eebc122b98bc18
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -19,7 +27,15 @@ Write a function named addOne that, given an array of numbers, uses map to retur
 ------------------------------------------------------------------------------------------------ */
 
 const addOne = (arr) => {
+<<<<<<< HEAD
   // Solution code here...
+=======
+  const newArr = [];
+  arr.map(function (value) {
+    newArr.push(value + 1);
+  });
+  return newArr;
+>>>>>>> bd5fd0cc0816b7f3af8a6098a4eebc122b98bc18
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -29,7 +45,15 @@ Write a function named addQuestion that, given an array of strings, uses map to 
 ------------------------------------------------------------------------------------------------ */
 
 const addQuestion = (arr) => {
+<<<<<<< HEAD
   // Solution code here...
+=======
+  const questionArr = [];
+  arr.map(function (value) {
+    questionArr.push(`${value}?`);
+  });
+  return questionArr;
+>>>>>>> bd5fd0cc0816b7f3af8a6098a4eebc122b98bc18
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -43,7 +67,15 @@ For example, twoToThe([1,2,3]) returns [2,4,8] because 2 ^ 1 = 2, 2 ^ 2 = 4, and
 ------------------------------------------------------------------------------------------------ */
 
 const forLoopTwoToThe = (arr) => {
+<<<<<<< HEAD
   // Solution code here...
+=======
+  const forLoopArr = [];
+  for (let i in arr) {
+    forLoopArr.push(Math.pow(2, arr[i]));
+  }
+  return forLoopArr;
+>>>>>>> bd5fd0cc0816b7f3af8a6098a4eebc122b98bc18
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -53,7 +85,15 @@ Write a function named forEachTwoToThe that produces the same output as your for
 ------------------------------------------------------------------------------------------------ */
 
 const forEachTwoToThe = (arr) => {
+<<<<<<< HEAD
   // Solution code here...
+=======
+  const forEachArr = [];
+  arr.forEach(function (value) {
+    forEachArr.push(Math.pow(2, value));
+  });
+  return forEachArr;
+>>>>>>> bd5fd0cc0816b7f3af8a6098a4eebc122b98bc18
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -63,7 +103,15 @@ Write a function named mapTwoToThe that produces the same output as your forLoop
 ------------------------------------------------------------------------------------------------ */
 
 const mapTwoToThe = (arr) => {
+<<<<<<< HEAD
   // Solution code here...
+=======
+  const mapArr = [];
+  arr.map(function (value) {
+    mapArr.push(Math.pow (2, value));
+  });
+  return mapArr;
+>>>>>>> bd5fd0cc0816b7f3af8a6098a4eebc122b98bc18
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -251,29 +299,49 @@ describe('Testing challenge 6', () => {
 
 xdescribe('Testing challenge 7', () => {
   test('It should return an array containing the character code for each letter', () => {
+<<<<<<< HEAD
     expect(charCode(['C', 'o', 'd', 'e', '3', '0', '1'])).toStrictEqual([ 67, 111, 100, 101, 51, 48, 49 ]);
+=======
+    expect(charCode(['C', 'o', 'd', 'e', '3', '0', '1'])).toStrictEqual([67, 111, 100, 101, 51, 48, 49]);
+>>>>>>> bd5fd0cc0816b7f3af8a6098a4eebc122b98bc18
     expect(charCode(['C', 'o', 'd', 'e', '3', '0', '1']).length).toStrictEqual(7);
   });
 });
 
 xdescribe('Testing challenge 8', () => {
   test('It should return an array containing the keys from an object', () => {
+<<<<<<< HEAD
     expect(evenOdd([5, 8, 2, 6, 9, 13, 542, 541])).toStrictEqual([ 'odd', 'even', 'even', 'even', 'odd', 'odd', 'even', 'odd' ]);
+=======
+    expect(evenOdd([5, 8, 2, 6, 9, 13, 542, 541])).toStrictEqual(['odd', 'even', 'even', 'even', 'odd', 'odd', 'even', 'odd']);
+>>>>>>> bd5fd0cc0816b7f3af8a6098a4eebc122b98bc18
     expect(evenOdd([5, 8, 2, 6, 9, 13, 542, 541]).length).toStrictEqual(8);
   });
 
   test('It should work with all odd numbers', () => {
+<<<<<<< HEAD
     expect(evenOdd([1, 3, 5, 7, 9])).toStrictEqual([ 'odd', 'odd', 'odd', 'odd', 'odd' ]);
+=======
+    expect(evenOdd([1, 3, 5, 7, 9])).toStrictEqual(['odd', 'odd', 'odd', 'odd', 'odd']);
+>>>>>>> bd5fd0cc0816b7f3af8a6098a4eebc122b98bc18
     expect(evenOdd([1, 3, 5, 7, 9]).length).toStrictEqual(5);
   });
 
   test('It should work with all even numbers', () => {
+<<<<<<< HEAD
     expect(evenOdd([2, 4, 6, 8, 10])).toStrictEqual([ 'even', 'even', 'even', 'even', 'even' ]);
+=======
+    expect(evenOdd([2, 4, 6, 8, 10])).toStrictEqual(['even', 'even', 'even', 'even', 'even']);
+>>>>>>> bd5fd0cc0816b7f3af8a6098a4eebc122b98bc18
     expect(evenOdd([2, 4, 6, 8, 10]).length).toStrictEqual(5);
   });
 
   test('It should return the string "N/A" if a non-number is included in the array', () => {
+<<<<<<< HEAD
     expect(evenOdd([5, 8, 2, 'hi'])).toStrictEqual([ 'odd', 'even', 'even', 'N/A' ]);
+=======
+    expect(evenOdd([5, 8, 2, 'hi'])).toStrictEqual(['odd', 'even', 'even', 'N/A']);
+>>>>>>> bd5fd0cc0816b7f3af8a6098a4eebc122b98bc18
     expect(evenOdd([5, 8, 2, 'hi']).length).toStrictEqual(4);
   });
 });
